@@ -9,6 +9,7 @@ const reset = () => {
 
 const start = () => {
     document.getElementById("start").style.opacity = 0
+    document.getElementById("resultscreen").innerHTML = ""
     document.getElementById("title").style.fontSize = '3rem'
     document.getElementById("resultscreen").style.opacity = 0
 
@@ -18,6 +19,10 @@ const start = () => {
     document.getElementById("color").style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
 
     document.getElementById("game").style.opacity = 1
+
+    document.getElementsByClassName("r")[0].innerHTML = `R ${red < 25? `< ` + `${red + Math.floor(25 * Math.random())}` : `> ` +  `${red - Math.floor(25 * Math.random())}`}`
+    document.getElementsByClassName("g")[0].innerHTML = `G ${green < 25? `< ` + `${green + Math.floor(25 * Math.random())}` : `> ` +  `${green - Math.floor(25 * Math.random())}`}`
+    document.getElementsByClassName("b")[0].innerHTML = `B ${blue < 25? `< ` + `${blue + Math.floor(25 * Math.random())}` : `> ` +  `${blue - Math.floor(25 * Math.random())}`}`
 }
 
 ['red','green','blue'].forEach(a => {

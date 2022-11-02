@@ -6,7 +6,6 @@ body {
     font-family: "ABeeZee", sans-serif; 
     font-size: 14px;
     margin: 0;
-    overflow: hidden;
 }
 
 #title {
@@ -48,6 +47,10 @@ body {
     text-align: center;
 }
 
+td {
+    text-align: left;
+}
+
 table {
     margin-bottom: 25px;
     margin: 0 auto;
@@ -64,12 +67,11 @@ table {
 input {
     height: 25px;
     width: 75px;
-    margin: 10px 0;
     margin: 5px 10px;
     font-size: 24px;
 }
 span {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -104,6 +106,7 @@ span {
     text-align: center;
     width: 100px;
     margin: 20px auto;
+    transform: translateX(45px);
 }
 
 #resultscreen {
