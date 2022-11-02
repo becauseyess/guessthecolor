@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Color</title>
+</head>
+<body>
+    <h1 id="title">Guess The Color!</h1>
+    <button id="start" onclick="start()">Start</button>
+    <h1 id="resultscreen">You Win!</h1>
+    <div id="game">
+        <h2>Your Color:</h2>
+        <table>
+            <tr>
+                <td><div id="color"></div></td>
+                <td>
+                    <div id="input-color"></div>
+                    <input id="red" type="number" max=255 min="1"><span class="r">R</span><br>
+                    <input id="green" type="number" max=255 min="1"><span class="g">G</span><br>
+                    <input id="blue" type="number" max=255 min="1"><span class="b">B</span><br>
+                    <button id="submit" onclick="submit()">Submit</button><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

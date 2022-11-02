@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body {
+    background-color: #242424;
+    color: #ffffff;
+    font-family: "ABeeZee", sans-serif; 
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#title {
+    font-size:5rem;
+    font-weight: bold;
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.3s cubic-bezier(.56,1.74,.32,.87);
+}
+
+#start {
+    transition: 0.1s ease-in;
+    text-align: center;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    color: #242424;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 200px;
+}
+
+#game {
+    opacity: 0;
+    transition: 0.5s cubic-bezier(.43,1.58,.06,.93);
+}
+
+#game > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 60px 0;
+    padding: 0;
+    text-align: center;
+}
+
+table {
+    margin-bottom: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#color {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+input {
+    height: 25px;
+    width: 75px;
+    margin: 10px 0;
+    margin: 5px 10px;
+    font-size: 24px;
+}
+span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.r {
+    color: red;
+}
+
+.g {
+    color:lime
+}
+
+.b {
+    color: rgb(53, 53, 255)
+}
+
+#input-color {
+    margin: 20px auto;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+#submit {
+    background-color: #ffffff;
+    border: 0;
+    color: #242424;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 5px;
+    text-align: center;
+    width: 100px;
+    margin: 20px auto;
+}
+
+#resultscreen {
+    font-size:2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0;
+    opacity: 0;
+    text-align: center; 
+    transition: 0.3s cubic-bezier(.56,1.74,.32,.87);
+}
